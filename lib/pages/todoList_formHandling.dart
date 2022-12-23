@@ -26,7 +26,7 @@ class ToDoListFormHandling extends StatelessWidget {
         child: Column(
           children: [
             const Padding(
-              padding: EdgeInsets.only(bottom: 30),
+              padding: EdgeInsets.only(bottom: 10),
               child: Center(
                 child: Text(
                   'input your task',
@@ -35,7 +35,7 @@ class ToDoListFormHandling extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 30),
+              padding: const EdgeInsets.only(bottom: 10),
               child: TextFormField(
                 controller: titleController,
                 maxLines: 2,
@@ -67,15 +67,15 @@ class ToDoListFormHandling extends StatelessWidget {
                       ))),
               keyboardType: TextInputType.multiline,
               onChanged: (str) {},
-              maxLines: 5,
+              maxLines: 3,
             ),
             const SizedBox(
               height: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 20.0),
+              padding: const EdgeInsets.only(bottom: 10.0),
               child: SizedBox(
-                height: 45,
+                height: 25,
                 width: MediaQuery.of(context).size.width,
                 child: ElevatedButton(
                   onPressed: () async {

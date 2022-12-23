@@ -25,7 +25,7 @@ class _TodoScreenState extends State<ToDoListDisplay> {
             await Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const ToDoListFormHandling()));
+                    builder: (context) => ToDoListFormHandling()));
             setState(() {});
           },
           backgroundColor: Colors.lightGreenAccent,
@@ -48,7 +48,7 @@ class _TodoScreenState extends State<ToDoListDisplay> {
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  const ToDoListFormHandling()));
+                                  ToDoListFormHandling(todo: snapshot.data![index])));
                       setState(() {});
                     },
                     onLongPress: () async {
